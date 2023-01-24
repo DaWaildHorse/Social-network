@@ -1,0 +1,12 @@
+#grid{
+    display: grid;
+    /* border:  solid red 5px; */
+    grid-template-columns: 100%;
+    grid-template-rows: 3fr;
+}
+
+.box{
+    border: red solid 1px;
+    
+    box-sizing: border-box;
+}
