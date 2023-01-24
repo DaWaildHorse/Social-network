@@ -3,6 +3,7 @@
     /* border:  solid red 5px; */
     grid-template-columns: 100%;
     grid-template-rows: 3fr;
+    gap: 30px;
 }
 
 .box{
