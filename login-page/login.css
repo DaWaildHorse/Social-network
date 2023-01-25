@@ -1,0 +1,47 @@
+:root {
+  --darker-color: #0F0E14;
+  --my-grey: #27242D;
+}
+
+body {
+  font-family: Helvetica;
+}
+
+#login-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dark {
+  background-color: var(--my-grey);
+  color: white;
+}
+
+#dark-light-toggle {
+  font-size: 1.5rem;
+}
+
+.login-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: 2em;
+  padding: 1.5em;
+  background: var(--darker-color);
+  color: white;
+  border-radius: 5%;
+}
+
+.login-box-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  margin-top: 1rem;
+  border-radius: 10%;
+}
