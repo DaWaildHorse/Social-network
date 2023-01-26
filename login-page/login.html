@@ -8,7 +8,7 @@
     <title>Document</title>
   </head>
   <body>
-    <button id="dark-light-toggle"><i class="fa-solid fa-moon"></i></button>
+    <button id="dark-light-toggle"><i class="fa-solid fa-moon"></i> dark mode</button>
     <div class="login-box-box">
       <div class="login-box">
         <h1 id="login-header">Login</h1>
@@ -19,6 +19,8 @@
             name="username"
             placeholder="username"
             autocomplete="off"
+            class="login-input"
+            maxlength="25"
           />
           <br />
           <input
@@ -27,9 +29,13 @@
             name="password"
             placeholder="password"
             autocomplete="off"
+            class="login-input"
+            maxlength="25"
           />
           <br /><br />
-          <input type="submit" value="Submit" />
+          <div class="submit-box">
+            <input type="submit" value="Submit" id="submit-btn" />
+          </div>
         </form>
       </div>
     </div>

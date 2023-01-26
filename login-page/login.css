@@ -1,6 +1,10 @@
 :root {
-  --darker-color: #0F0E14;
-  --my-grey: #27242D;
+  --darker-color: #0f0e14;
+  --my-grey: #27242d;
+  --my-green: #2db45a;
+  --lighter-grey: #48464d;
+  --cremita-obscuro: #ececec;
+  --darker-green: #1a8d3e;
 }
 
 body {
@@ -11,6 +15,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: default;
 }
 
 .dark {
@@ -18,8 +23,48 @@ body {
   color: white;
 }
 
+.dark #dark-light-toggle:hover {
+  background-color: var(--lighter-grey);
+}
+
 #dark-light-toggle {
-  font-size: 1.5rem;
+  font-size: 1.2em;
+  padding-right: 0.5rem;
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+  margin: 0.5rem;
+  color: inherit;
+  border: solid var(--lighter-grey);
+  padding: 0.5rem;
+  border-radius: 2vh;
+  transition: background-color 0.3s ease-in;
+}
+
+#dark-light-toggle:hover {
+  background-color: var(--cremita-obscuro);
+}
+
+.submit-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#submit-btn {
+  background-color: var(--my-green);
+  color: white;
+  border: none;
+  margin-top: 0.2em;
+  font-size: 1.4rem;
+  padding: 0.5em;
+  border-radius: 2vh;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in;
+}
+
+#submit-btn:hover {
+  background-color: var(--darker-green);
 }
 
 .login-box {
@@ -35,13 +80,25 @@ body {
   border-radius: 5%;
 }
 
-.login-box-box{
+.login-box-box {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 2rem;
 }
 
-input {
-  margin-top: 1rem;
-  border-radius: 10%;
+.login-input {
+  margin-top: 1em;
+  border: none;
+  background: var(--my-grey);
+  font-size: 1rem;
+  padding: 1rem 0 1rem 0.5rem;
+  width: 16em;
+  height: 0.5em;
+  border-radius: 2vh;
+  transition: background 0.3s ease-in;
+}
+
+.login-input:hover {
+  background: var(--lighter-grey);
 }
