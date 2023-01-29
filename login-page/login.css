@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: Helvetica;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #login-header {
@@ -16,6 +16,7 @@ body {
   justify-content: center;
   align-items: center;
   cursor: default;
+  font-size: 2rem;
 }
 
 .dark {
@@ -72,13 +73,21 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: fit-content;
+  width: 400px;
   margin: 2em;
   padding: 1.5em;
   background: var(--darker-color);
   color: white;
   border-radius: 5%;
 }
+
+@media (max-width: 680px) {
+  .login-box{
+    width: fit-content;
+  }
+} 
+
+
 
 .login-box-box {
   display: flex;
@@ -101,4 +110,8 @@ body {
 
 .login-input:hover {
   background: var(--lighter-grey);
+}
+
+.lilmoon {
+  padding-right: 0.5rem;
 }

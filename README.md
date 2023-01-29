@@ -6,5 +6,6 @@
 
 ### Working repositories URL's
 
-https://github.com/HugeErick/Social-network.git
-https://github.com/DaWaildHorse/Social-network.git
+git pull https://github.com/HugeErick/Social-network.git origin
+
+git pull https://github.com/DaWaildHorse/Social-network.git home-page
