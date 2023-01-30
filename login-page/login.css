@@ -88,12 +88,15 @@ body {
 } 
 
 
-
 .login-box-box {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
+}
+
+input{
+  color: white;
 }
 
 .login-input {
@@ -115,3 +118,5 @@ body {
 .lilmoon {
   padding-right: 0.5rem;
 }
+
+
